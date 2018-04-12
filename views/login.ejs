@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.container {
+		    padding: 25px;
+		    position: fixed;
+		}
+
+		.form-login {
+		    background-color: #EDEDED;
+		    padding-top: 10px;
+		    padding-bottom: 20px;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    border-radius: 15px;
+		    border-color:#d2d2d2;
+		    border-width: 5px;
+		    box-shadow:0 1px 0 #cfcfcf;
+		}
+
+		h4 { 
+		 border:0 solid #fff; 
+		 border-bottom-width:1px;
+		 padding-bottom:10px;
+		 text-align: center;
+		}
+
+		.form-control {
+		    border-radius: 10px;
+		}
+
+		.wrapper {
+		    text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <div class="form-login">
+            <h4>Login</h4>
+            <form action="" method="post">
+            	
+            <input type="text" name="username" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+            </br>
+            <input type="text" id="userPassword" name="password" class="form-control input-sm chat-input" placeholder="password" />
+            </br>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <button type="submit" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></button>
+            </span>
+            <%= message ? message : '' %>
+
+            </form>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
